@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Planner</title>
+    <link rel="stylesheet" href="css/homeStyle.css">
+    <link rel="stylesheet" href="css/eventStyle.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <!-- font-awesome icons -->
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+    <!-- //font-awesome icons -->
+</head>
+
+<body>
+    <header>
+        <a id="backBtn" onclick="goBack()"></a>
+        <a id="fwdBtn" onclick="goForward()"></a>
+        <!-- here we took menu class-->
+        <div class="menu">
+
+            <nav>
+                <div class="logo">
+                    <!--logo is the  subclass  of the class menu in which image or text inserted-->
+                    <a href="index.html" class="logo_text">
+                        <!-- here <a> is used for link -->
+                        <img id="logoo" class="image_style" src="Images/Memo3.png">
+                        <span>MEMORIES TIES</span>
+                        <img class="image_style" src="Images/Memo3.png">
+                        <!--<img> is used for inserting image-->
+
+                    </a>
+                </div>
+                <ul>
+                    <!--<li> for list-->
+                    <li name="home"><a href="">Home</a></li>
+                    <li name="gallery"><a href="">Gallery</a></li>
+                    <li name="testimonials"><a href="">Testimonials</a></li>
+                    <li name="contact"><a href="">Contact</a></li>
+
+                </ul>
+            </nav>
+        </div>
+        <div class="pageTitle">
+            <h2>Home</h2>
+        </div>
+    </header>
+    <main class="homeMain">
+        <section class="intro">Hello & Welcome</section>
+        <!--we took seprate section with the given name intro in the homemain class for displaying the hello & welcome text seprately-->
+        <section class="intro">
+            <!--the same intro class used for displaying text at the same place -->
+            MEMORIES TIES specializes in creating beautiful and unique Weddings, Social Engagements and Corporate Events. We provide a multitude of services ranging from Day-of to Full Service Event Coordination, and everything in between. Your coordinator will collaborate
+            with you to produce an unforgettable event that will be tailored to you and your vision. During a complimentary initial consultation, you will have the opportunity to look through our portfolios, learn more about our services and ask any questions
+            you may have. Once we determine what services are needed through this consultation, a proposal will be created and customized especially to your needs.
+        </section>
+
+        <section id="homeGrid">
+            <section class="imageGallerty_dim" id="g1"></section>
+            <iframe class="imageGallery_dim" id="g2" src="https://www.youtube.com/embed/ipw1fQad5sg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+            </iframe>
+            <section class="imageGallery_dim" id="g3"></section>
+
+            <p id="g4" class="homeText">
+                We don't need you to bring us gifts – we know plane tickets are expensive and your presence at the wedding is enough! If you really want to give us something, a contribution to our honeymoon fund would be awesome
+            </p>
+            <p id="g5" class="homeText">
+                Build your own birthday party or choose one of our birthday party packages! Our highly skilled outdoor education team and transformed historic spaces are here to provide an unforgettable party experience. From hands-on, full-sensory nature walks to constructing
+                shelters with our diverse supply of natural materials, we're here for your special day.
+            </p>
+            <p id="g6" class="homeText">
+                “A goal without a plan is just a wish.” And those things you do wish for? Make them happen! Set a goal, make a plan and get to it. Any great event planner is a pro in this arena!
+            </p>
+
+
+        </section>
+    </main>
+    <footer>
+        <!-- in footer section1 class containing two span icon  with other 
+        subclasses (material-icons,icontext)  for displaing the caal icon and phone number-->
+        <section class="section1">
+            <span class="icon">
+                <i class="material-icons">call</i> <!-- <i> tag is usually displayed in italic-->
+                <p class="icontext" id="footer_font">
+                    +1 514-572-8212
+                </p>
+            </span>
+            <span class="icon">
+                <i class="material-icons">mail_outline</i>
+                <p class="icontext" id="footer_font">
+                    GurvinderSingh201996@gmail.com
+                </p>
+            </span>
+
+        </section>
+        <section class="section2">
+            <article class="aboutUs">
+                <p id="footer_font">ABOUT US</p>
+                </br>
+                <p id="footer_font">
+                    We're dedicated to giving you the best and charming memories for your special events, with a focus on dependability, customer service and uniqueness. Founded in 2020, Memories Ties has come a long way from its beginnings in Montreal,QC. We hope you enjoy
+                    our services as much as we enjoy offering them to you. If you have any questions or comments, please don't hesitate to contact us.
+                </p>
+            </article>
+            <article class="aboutUs">
+                <p class="newsletter" id="footer_font">NEWSLETTER</p>
+                <p class="newsletter" id="footer_font">
+                    Get the latest updates on our projects delivered to your inbox every month.
+                </p>
+                <input type="text" name="subscribe">
+                <input class="button" type="submit" value="Subscribe" id="submit">
+            </article>
+            <article class="social">
+                <p id="footer_font">WE ARE SOCIAL</p>
+                <ul class="footer_list">
+                    <!-- li tag we used  for creating lists in footer_list class in each list the link is inserted for 
+                    facebook,twitter ,instagram,pintrest with the help of<a>tag <-->
+                    <li><a href="https://www.facebook.com/"><i class="fa fa-facebook"></i></a></li>
+                    <li><a href="https://twitter.com/explore"><i class="fa fa-twitter"></i></a></li>
+                    <li><a href="https://www.instagram.com/"><i class="fa fa-instagram"></i></a></li>
+                    <li><a href="https://www.pinterest.ca/"><i class="fa fa-pinterest"></i></a></li>
+                </ul>
+            </article>
+        </section>
+        <section class="section3">
+            <!-- class section3 displaying the given text in the <P> tag(paharagraph)-->
+            <p id="footer_font">© &nbsp;
+                <p id="fullYear"></p>&nbsp; Memories Ties. All rights reserved</p>
+        </section>
+    </footer>
+
+
+
+</body>
+
+</html>
