@@ -1,0 +1,89 @@
+main {
+    display: flex;
+    justify-content: center;
+    margin-top: 4em;
+}
+
+
+/* width is given to the table*/
+
+.table {
+    width: 80%;
+}
+
+tbody tr td {
+    padding: 1em;
+}
+
+td {
+    font-size: 17px;
+}
+
+
+/*    these properties are given to the table data class row1  and with the background-image an image is insertes   */
+
+.row1 {
+    width: 18em;
+    height: 15em;
+    background-image: url(../Images/img1.jpg);
+    background-size: cover;
+}
+
+
+/*    these properties are given to the table data class row2  and with the background-image an image is insertes   */
+
+.row2 {
+    width: 18em;
+    height: 15em;
+    background-image: url(../Images/img2.jpg);
+    background-size: cover;
+}
+
+
+/*    these properties are given to the table data class row3  and with the background-image an image is insertes   */
+
+.row3 {
+    width: 18em;
+    height: 15em;
+    background-image: url(../Images/minion.jpg);
+    background-size: cover;
+}
+
+
+/*    these properties are given to the table data class row4  and with the background-image an image is insertes   */
+
+.row4 {
+    width: 18em;
+    height: 15em;
+    background-image: url(../Images/img3.jpg);
+    background-size: cover;
+}
+
+
+/*    these properties are given to the table data class row5 and with the background-image an image is insertes   */
+
+.row5 {
+    width: 18em;
+    height: 15em;
+    background-image: url(../Images/hulk.jpg);
+    background-size: cover;
+}
+
+
+/* this is used for make the webpage responsive  for Medium devices with max 768px width and the gap between all rows is 1em with the help of padding */
+
+@media only screen and (max-width: 768px) {
+    table,
+    tbody,
+    tr,
+    td {
+        display: block;
+    }
+    .row1,
+    .row2,
+    .row3,
+    .row4,
+    .row5 {
+        padding: 1em 0 0 0;
+    }
+}

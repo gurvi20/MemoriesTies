@@ -4,12 +4,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Event Planner</title>
+    <title>Contact Us</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.1/jquery.validate.min.js"></script>
+
+    <script type="text/javascript" src="js/contact-js.js"></script>
     <script type="text/javascript" src="js/index-js.js"></script>
-    <link rel="stylesheet" href="css/homeStyle.css">
+    <script src="js/form-validation.js"></script>
+    <link rel="stylesheet" href="css/contact_style.css">
     <link rel="stylesheet" href="css/eventStyle.css">
-    <link rel="stylesheet" href="css/default_style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <!-- font-awesome icons -->
     <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
@@ -21,63 +24,57 @@
     <header>
         <a id="backBtn" onclick="goBack()"></a>
         <a id="fwdBtn" onclick="goForward()"></a>
-        <!-- here we took menu class-->
         <div class="menu">
-
             <nav>
                 <div class="logo">
-                    <!--logo is the  subclass  of the class menu in which image or text inserted-->
                     <a href="index.html" class="logo_text">
-                        <!-- here <a> is used for link -->
-                        <img id="logoo" class="image_style" src="Images/Memo3.png">
+                        <img id="direction" class="image_style" src="Images/Memo3.png">
                         <span>MEMORIES TIES</span>
                         <img class="image_style" src="Images/Memo3.png">
-                        <!--<img> is used for inserting image-->
-
                     </a>
                 </div>
                 <ul>
-                    <!--<li> for list-->
                     <li name="home"><a href="index.html">Home</a></li>
                     <li name="gallery"><a href="gallery.html">Gallery</a></li>
                     <li name="testimonials"><a href="testimonials.html">Testimonials</a></li>
                     <li name="contact"><a href="contact.html">Contact</a></li>
-
                 </ul>
             </nav>
         </div>
         <div class="pageTitle">
-            <h2>Home</h2>
+            <h2>Get In Touch</h2>
         </div>
     </header>
-    <main class="homeMain">
-        <section class="intro">Hello & Welcome</section>
-        <!--we took seprate section with the given name intro in the homemain class for displaying the hello & welcome text seprately-->
-        <section class="intro">
-            <!--the same intro class used for displaying text at the same place -->
-            MEMORIES TIES specializes in creating beautiful and unique Weddings, Social Engagements and Corporate Events. We provide a multitude of services ranging from Day-of to Full Service Event Coordination, and everything in between. Your coordinator will collaborate
-            with you to produce an unforgettable event that will be tailored to you and your vision. During a complimentary initial consultation, you will have the opportunity to look through our portfolios, learn more about our services and ask any questions
-            you may have. Once we determine what services are needed through this consultation, a proposal will be created and customized especially to your needs.
-        </section>
+    <main>
+        <section class="main_section">
+            <section class="contactTitle">
+                <p class="title">
+                    Feel free to drop us a line below!
+                </p>
+            </section>
 
-        <section id="homeGrid">
-            <section class="imageGallerty_dim" id="g1"></section>
-            <iframe class="imageGallery_dim" id="g2" src="https://www.youtube.com/embed/ipw1fQad5sg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
-            </iframe>
-            <section class="imageGallery_dim" id="g3"></section>
+            <form action="" class="contactForm" name="contactUs">
+                <section class="inputs">
+                    <label class="label" for="name">Full Name<span class="required">*</span></label>
+                    <input onfocus="changeBack(this.id)" onblur="normBack(this.id)" type="text" class="inputText" name="name" id="name" placeholder="Full Name"></br>
+                </section>
+                <section class="inputs">
+                    <label class="label" for="email">Email<span class="required">*</span></label>
+                    <input onfocus="changeBack(this.id)" onblur="normBack(this.id)" class="inputText" type="email" name="email" id="email" placeholder="example@email.com"></br>
+                </section>
+                <section class="inputs">
+                    <label class="label" for="phNum">Phone<span class="required">*</span></label>
+                    <input onfocus="changeBack(this.id)" onblur="normBack(this.id)" class="inputText" type="number" name="phNum" id="phNum" placeholder="514-888-9999"></br>
+                </section>
+                <section class="inputs">
+                    <label class="label" for="message">Message</label>
+                    <textarea onfocus="changeBack(this.id)" onblur="normBack(this.id)" class="inputText" id="message" name="message" placeholder="Your Comment..."></textarea>
+                </section>
 
-            <p id="g4" class="homeText">
-                We don't need you to bring us gifts – we know plane tickets are expensive and your presence at the wedding is enough! If you really want to give us something, a contribution to our honeymoon fund would be awesome
-            </p>
-            <p id="g5" class="homeText">
-                Build your own birthday party or choose one of our birthday party packages! Our highly skilled outdoor education team and transformed historic spaces are here to provide an unforgettable party experience. From hands-on, full-sensory nature walks to constructing
-                shelters with our diverse supply of natural materials, we're here for your special day.
-            </p>
-            <p id="g6" class="homeText">
-                “A goal without a plan is just a wish.” And those things you do wish for? Make them happen! Set a goal, make a plan and get to it. Any great event planner is a pro in this arena!
-            </p>
-
-
+                <section class="formbtn" id="alertToSubmit">
+                    <button type="submit" class="submitBtn">Submit</button>
+                </section>
+            </form>
         </section>
     </main>
     <footer>
@@ -133,8 +130,6 @@
                 <p id="fullYear"></p>&nbsp; Memories Ties. All rights reserved</p>
         </section>
     </footer>
-
-
 
 </body>
 

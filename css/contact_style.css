@@ -1,0 +1,98 @@
+main {
+    display: flex;
+    justify-content: center;
+}
+
+main>.main_section {
+    width: 70%;
+    flex-direction: column;
+    overflow: hidden;
+    margin-top: 4em;
+    background: rgba(0, 0, 0, 0.6);
+}
+
+.contactTitle {
+    height: 10em;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(../Images/contact-us.jpg);
+    margin-top: 0;
+}
+
+.contactForm {
+    justify-content: space-between;
+    padding: 45px 88px 57px 190px;
+}
+
+.required {
+    color: red;
+}
+
+.inputs {
+    position: relative;
+    border-bottom: 1px solid #b2b2b2;
+    margin-bottom: 26px;
+}
+
+.label {
+    font-family: 'Pacifico', cursive;
+    font-size: 15px;
+    color: whitesmoke;
+    line-height: 1.2;
+    text-align: right;
+    position: absolute;
+    top: 14px;
+    left: -105px;
+    width: 80px;
+}
+
+.inputText {
+    font-family: 'Pacifico', cursive;
+    font-size: 15px;
+    color: whitesmoke;
+    line-height: 1.2;
+    display: block;
+    width: 100%;
+    background: transparent;
+    padding: 0 5px;
+    border: none;
+    height: 45px;
+}
+
+.formbtn {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-top: 8px;
+}
+
+.submitBtn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Pacifico';
+    padding: 0 20px;
+    min-width: 160px;
+    height: 50px;
+    background-color: #F44336;
+    border-radius: 25px;
+    font-size: 16px;
+    color: #fff;
+    line-height: 1.2;
+    transition: all 0.4s;
+}
+
+.title {
+    font-family: 'Pacifico', cursive;
+    font-size: 20px;
+    color: black;
+    display: flex;
+    justify-content: center;
+    padding-top: 3.5em;
+}
+
+@media only screen and (max-width: 768px) {
+    main>.main_section {
+        width: 100%;
+    }
+}

@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script type="text/javascript" src="js/index-js.js"></script>
+    <script type="text/javascript" src="js/gallery-js.js"></script>
+    <link rel="stylesheet" href="css/eventStyle.css">
+    <link rel="stylesheet" href="css/gallery_style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+    <!-- font-awesome icons -->
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+    <!-- //font-awesome icons -->
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+</head>
+
+<body>
+    <header>
+        <a id="backBtn" onclick="goBack()"></a>
+        <a id="fwdBtn" onclick="goForward()"></a>
+        <!-- here we took menu class-->
+        <div class="menu">
+
+            <nav>
+                <div class="logo">
+                    <!--logo is the  subclass  of the class menu in which image or text inserted-->
+                    <a href="index.html" class="logo_text">
+                        <!-- here <a> is used for link -->
+                        <img id="logoo" class="image_style" src="Images/Memo3.png">
+                        <span>MEMORIES TIES</span>
+                        <img class="image_style" src="Images/Memo3.png">
+                        <!--<img> is used for inserting image-->
+
+                    </a>
+                </div>
+                <ul>
+                    <!--<li> for list-->
+                    <li name="home"><a href="index.html">Home</a></li>
+                    <li name="gallery"><a href="gallery.html">Gallery</a></li>
+                    <li name="testimonials"><a href="testimonials.html">Testimonials</a></li>
+                    <li name="contact"><a href="contact.html">Contact</a></li>
+
+                </ul>
+            </nav>
+        </div>
+        <div class="pageTitle">
+            <h2>Gallery</h2>
+        </div>
+    </header>
+
+    <main id="wrapper">
+        <a onmouseover="galleryFunc(this.id)" onmouseout="galleryNormFunc(this.id)" href="#birthGallery" id="d1" class="image_dim">
+            <section>
+                <article id="back">
+                    <p id="image_title">Birthdays</p>
+                </article>
+            </section>
+        </a>
+        <a onmouseover="galleryFunc(this.id)" onmouseout="galleryNormFunc(this.id)" href="#cocktailGallery" id="d2" class="image_dim">
+            <section>
+                <article id="back">
+                    <p id="image_title">Cocktails</p>
+                </article>
+            </section>
+        </a>
+        <a onmouseover="galleryFunc(this.id)" onmouseout="galleryNormFunc(this.id)" href="#showerGallery" id="d3" class="image_dim">
+            <section>
+                <article id="back">
+                    <p id="image_title">Showers</p>
+                </article>
+            </section>
+        </a>
+        <a onmouseover="galleryFunc(this.id)" onmouseout="galleryNormFunc(this.id)" href="#weddingGallery" id="d4" class="image_dim">
+            <section>
+                <article id="back">
+                    <p id="image_title">Weddings</p>
+                </article>
+            </section>
+        </a>
+        <a onmouseover="galleryFunc(this.id)" onmouseout="galleryNormFunc(this.id)" href="#poolGallery" id="d5" class="image_dim">
+            <section>
+                <article id="back">
+                    <p id="image_title">Pool</p>
+                </article>
+            </section>
+        </a>
+        <a onmouseover="galleryFunc(this.id)" onmouseout="galleryNormFunc(this.id)" href="#bonfireGallery" id="d6" class="image_dim">
+            <section>
+                <article id="back">
+                    <p id="image_title">Bonefire</p>
+                </article>
+            </section>
+        </a>
+    </main>
+    <main id="birthGallery">
+        <a href="gallery.html" id="close"><img class="close_style" src="Images/close.png"></a>
+        <section id="mainGallery">
+            <section class="imageGallery_dim" id="image1"></section>
+            <section class="imageGallery_dim" id="image2"></section>
+            <section class="imageGallery_dim" id="image3"></section>
+            <section class="imageGallery_dim" id="image4"></section>
+            <section class="imageGallery_dim" id="image5"></section>
+        </section>
+    </main>
+    <main id="cocktailGallery">
+        <a href="gallery.html" id="close"><img class="close_style" src="Images/close.png"></a>
+        <section id="mainGallery">
+            <section class="imageGallery_dim" id="cocktailImage1"></section>
+            <section class="imageGallery_dim" id="cocktailImage2"></section>
+            <section class="imageGallery_dim" id="cocktailImage3"></section>
+            <section class="imageGallery_dim" id="cocktailImage4"></section>
+            <section class="imageGallery_dim" id="cocktailImage5"></section>
+        </section>
+    </main>
+    <main id="showerGallery">
+        <a href="gallery.html" id="close"><img class="close_style" src="Images/close.png"></a>
+        <section id="mainGallery">
+            <section class="imageGallery_dim" id="showerImage1"></section>
+            <section class="imageGallery_dim" id="showerImage2"></section>
+            <section class="imageGallery_dim" id="showerImage3"></section>
+            <section class="imageGallery_dim" id="showerImage4"></section>
+            <section class="imageGallery_dim" id="showerImage5"></section>
+        </section>
+    </main>
+    <main id="weddingGallery">
+        <a href="gallery.html" id="close"><img class="close_style" src="Images/close.png"></a>
+        <section id="mainGallery">
+            <section class="imageGallery_dim" id="weddingImage1"></section>
+            <section class="imageGallery_dim" id="weddingImage2"></section>
+            <section class="imageGallery_dim" id="weddingImage3"></section>
+            <section class="imageGallery_dim" id="weddingImage4"></section>
+            <section class="imageGallery_dim" id="weddingImage5"></section>
+        </section>
+    </main>
+    <main id="poolGallery">
+        <a href="gallery.html" id="close"><img class="close_style" src="Images/close.png"></a>
+        <section id="mainGallery">
+            <section class="imageGallery_dim" id="poolImage1"></section>
+            <section class="imageGallery_dim" id="poolImage2"></section>
+            <section class="imageGallery_dim" id="poolImage3"></section>
+            <section class="imageGallery_dim" id="poolImage4"></section>
+            <section class="imageGallery_dim" id="poolImage5"></section>
+        </section>
+    </main>
+    <main id="bonfireGallery">
+        <a href="gallery.html" id="close"><img class="close_style" src="Images/close.png"></a>
+        <section id="mainGallery">
+            <section class="imageGallery_dim" id="bonfireImage1"></section>
+            <section class="imageGallery_dim" id="bonfireImage2"></section>
+            <section class="imageGallery_dim" id="bonfireImage3"></section>
+            <section class="imageGallery_dim" id="bonfireImage4"></section>
+            <section class="imageGallery_dim" id="bonfireImage5"></section>
+        </section>
+
+
+
+
+    </main>
+
+    <footer>
+        <!-- in footer section1 class containing two span icon  with other 
+        subclasses (material-icons,icontext)  for displaing the caal icon and phone number-->
+        <section class="section1">
+            <span class="icon">
+                <i class="material-icons">call</i> <!-- <i> tag is usually displayed in italic-->
+                <p class="icontext" id="footer_font">
+                    +1 514-572-8212
+                </p>
+            </span>
+            <span class="icon">
+                <i class="material-icons">mail_outline</i>
+                <p class="icontext" id="footer_font">
+                    GurvinderSingh201996@gmail.com
+                </p>
+            </span>
+
+        </section>
+        <section class="section2">
+            <article class="aboutUs">
+                <p id="footer_font">ABOUT US</p>
+                </br>
+                <p id="footer_font">
+                    We're dedicated to giving you the best and charming memories for your special events, with a focus on dependability, customer service and uniqueness. Founded in 2020, Memories Ties has come a long way from its beginnings in Montreal,QC. We hope you enjoy
+                    our services as much as we enjoy offering them to you. If you have any questions or comments, please don't hesitate to contact us.
+                </p>
+            </article>
+            <article class="aboutUs">
+                <p class="newsletter" id="footer_font">NEWSLETTER</p>
+                <p class="newsletter" id="footer_font">
+                    Get the latest updates on our projects delivered to your inbox every month.
+                </p>
+                <input type="text" name="subscribe">
+                <input class="button" type="submit" value="Subscribe" id="submit">
+            </article>
+            <article class="social">
+                <p id="footer_font">WE ARE SOCIAL</p>
+                <ul class="footer_list">
+                    <!-- li tag we used  for creating lists in footer_list class in each list the link is inserted for 
+                    facebook,twitter ,instagram,pintrest with the help of<a>tag <-->
+                    <li><a href="https://www.facebook.com/"><i class="fa fa-facebook"></i></a></li>
+                    <li><a href="https://twitter.com/explore"><i class="fa fa-twitter"></i></a></li>
+                    <li><a href="https://www.instagram.com/"><i class="fa fa-instagram"></i></a></li>
+                    <li><a href="https://www.pinterest.ca/"><i class="fa fa-pinterest"></i></a></li>
+                </ul>
+            </article>
+        </section>
+        <section class="section3">
+            <!-- class section3 displaying the given text in the <P> tag(paharagraph)-->
+            <p id="footer_font">© &nbsp;
+                <p id="fullYear"></p>&nbsp; Memories Ties. All rights reserved</p>
+        </section>
+    </footer>
+
+
+</body>
+
+</html>

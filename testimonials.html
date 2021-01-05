@@ -7,9 +7,9 @@
     <title>Event Planner</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script type="text/javascript" src="js/index-js.js"></script>
-    <link rel="stylesheet" href="css/homeStyle.css">
+    <script type="text/javascript" src="js/testimonials-js.js"></script>
     <link rel="stylesheet" href="css/eventStyle.css">
-    <link rel="stylesheet" href="css/default_style.css">
+    <link rel="stylesheet" href="css/testimonial_style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <!-- font-awesome icons -->
     <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
@@ -21,64 +21,87 @@
     <header>
         <a id="backBtn" onclick="goBack()"></a>
         <a id="fwdBtn" onclick="goForward()"></a>
-        <!-- here we took menu class-->
         <div class="menu">
-
             <nav>
+                <!--The <nav> tag used for navigation links for (home,gallery,testimonials,contact).-->
                 <div class="logo">
-                    <!--logo is the  subclass  of the class menu in which image or text inserted-->
                     <a href="index.html" class="logo_text">
-                        <!-- here <a> is used for link -->
-                        <img id="logoo" class="image_style" src="Images/Memo3.png">
+                        <img id="direction" class="image_style" src="Images/Memo3.png">
                         <span>MEMORIES TIES</span>
                         <img class="image_style" src="Images/Memo3.png">
-                        <!--<img> is used for inserting image-->
-
                     </a>
+
                 </div>
                 <ul>
-                    <!--<li> for list-->
                     <li name="home"><a href="index.html">Home</a></li>
                     <li name="gallery"><a href="gallery.html">Gallery</a></li>
                     <li name="testimonials"><a href="testimonials.html">Testimonials</a></li>
                     <li name="contact"><a href="contact.html">Contact</a></li>
-
                 </ul>
             </nav>
         </div>
+
         <div class="pageTitle">
-            <h2>Home</h2>
+            <!-- <div class='heart animated'></div> -->
+            <h2>Testimonials</h2>
+            <!-- <div class='heart animated'></div>  -->
         </div>
+        <!--seprtae div pageTitle is used for displaying title seprately-->
     </header>
-    <main class="homeMain">
-        <section class="intro">Hello & Welcome</section>
-        <!--we took seprate section with the given name intro in the homemain class for displaying the hello & welcome text seprately-->
-        <section class="intro">
-            <!--the same intro class used for displaying text at the same place -->
-            MEMORIES TIES specializes in creating beautiful and unique Weddings, Social Engagements and Corporate Events. We provide a multitude of services ranging from Day-of to Full Service Event Coordination, and everything in between. Your coordinator will collaborate
-            with you to produce an unforgettable event that will be tailored to you and your vision. During a complimentary initial consultation, you will have the opportunity to look through our portfolios, learn more about our services and ask any questions
-            you may have. Once we determine what services are needed through this consultation, a proposal will be created and customized especially to your needs.
-        </section>
+    <main class="maintest">
 
-        <section id="homeGrid">
-            <section class="imageGallerty_dim" id="g1"></section>
-            <iframe class="imageGallery_dim" id="g2" src="https://www.youtube.com/embed/ipw1fQad5sg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
-            </iframe>
-            <section class="imageGallery_dim" id="g3"></section>
-
-            <p id="g4" class="homeText">
-                We don't need you to bring us gifts – we know plane tickets are expensive and your presence at the wedding is enough! If you really want to give us something, a contribution to our honeymoon fund would be awesome
-            </p>
-            <p id="g5" class="homeText">
-                Build your own birthday party or choose one of our birthday party packages! Our highly skilled outdoor education team and transformed historic spaces are here to provide an unforgettable party experience. From hands-on, full-sensory nature walks to constructing
-                shelters with our diverse supply of natural materials, we're here for your special day.
-            </p>
-            <p id="g6" class="homeText">
-                “A goal without a plan is just a wish.” And those things you do wish for? Make them happen! Set a goal, make a plan and get to it. Any great event planner is a pro in this arena!
-            </p>
-
-
-        </section>
+        <table class="table">
+            <tbody>
+                <!-- <tbody> tag is used to group all  body content in the table-->
+                <tr>
+                    <!-- <tr> is used for inserting data in the table row-->
+                    <td class="row1">
+                        <!--The <td> tag used for standard cell in the table with the class row1.-->
+                    </td>
+                    <td name="com1" onmouseover="commentHover('com1')" onmouseout="commentHoverOut('com1')">
+                        Thank you MEMORIES TIES for collaborating with us and making our wedding day vision a reality. MEMORIES TIES was truly appreciated and critical to the success of our special day. We are grateful for everything you did to make our journey to our Wedding
+                        Day the most special and beautiful day of our lives.
+                    </td>
+                    <td>Tina & Jim</td>
+                    <!--td tag used again for displaying the text seprately in the same section -->
+                </tr>
+                <tr>
+                    <td class="row2">
+                    </td>
+                    <td name="com2" onmouseover="commentHover('com2')" onmouseout="commentHoverOut('com2')">
+                        Brock & I are so happy that Adam & Cat told us about you. You honestly made our day so relaxed & carefree – we were able to enjoy our day fully & just as importantly our parents were able to as well. You are so calm and collected which makes you so amazing
+                        at what you do! We wish you all the best in the future – we are telling all our friends about you! Thank you so much!
+                    </td>
+                    <td>Carmela & Brock</td>
+                </tr>
+                <tr>
+                    <td class="row3">
+                    </td>
+                    <td name="com3" onmouseover="commentHover('com3')" onmouseout="commentHoverOut('com3')">
+                        Gorgeous. Elegant. Habs. Not sure how you made these three work. But WORK they did! Thank you so much for an amazing shower. Much love!
+                    </td>
+                    <td>Heather</td>
+                </tr>
+                <tr>
+                    <td class="row4">
+                    </td>
+                    <td name="com4" onmouseover="commentHover('com4')" onmouseout="commentHoverOut('com4')">
+                        Denis is amazing! He got involved with our fundraising campaign in the 11th hour and helped us achieve our goal. Not only does he get the job done, he truly cared about our event and our cause. A remarkable and completely smooth experience. I’ll definitely
+                        be working with MEMORIES TIES for our next function!
+                    </td>
+                    <td>Jeff Schnurr</td>
+                </tr>
+                <tr>
+                    <td class="row5">
+                    </td>
+                    <td name="com5" onmouseover="commentHover('com5')" onmouseout="commentHoverOut('com5')">
+                        Where do we begin?!?? We never would have made it down the aisle without all of your hard work. You made the insanity of a wedding day clear and easy, you made our wedding day exactly what we thought of…you made it real! Thank you for making everything
+                        with our wedding easy, our families both had the opportunity to enjoy the day. We will forever be grateful. Thank you, Thank you, Thank you!
+                    </td>
+                    <td>Adam & Cat</td>
+                </tr>
+            </tbody>
+        </table>
     </main>
     <footer>
         <!-- in footer section1 class containing two span icon  with other 
@@ -133,8 +156,6 @@
                 <p id="fullYear"></p>&nbsp; Memories Ties. All rights reserved</p>
         </section>
     </footer>
-
-
 
 </body>
 
