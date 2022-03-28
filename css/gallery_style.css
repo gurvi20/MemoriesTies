@@ -1,58 +1,58 @@
 #wrapper {
-    display: grid;
-    justify-content: center;
-    grid-gap: 25px;
-    margin-top: 4em;
-    grid-template-areas: "birthday cocktail shower" "wedding pool bonfire";
+  display: grid;
+  justify-content: center;
+  grid-gap: 25px;
+  margin-top: 4em;
+  grid-template-areas: "birthday cocktail shower" "wedding pool bonfire";
 }
 
 #d1 {
-    background-image: url(../Images/Birthday/party-balloons.jpg);
-    grid-area: birthday;
+  background-image: url(../Images/Birthday/party-balloons.jpg);
+  grid-area: birthday;
 }
 
 #d2 {
-    background-image: url(../Images/Cocktail/cocktail5.jpg);
-    grid-area: cocktail;
+  background-image: url(../Images/Cocktail/cocktail5.jpg);
+  grid-area: cocktail;
 }
 
 #d3 {
-    background-image: url(../Images/Baby_shower/baby1.jpg);
-    grid-area: shower;
+  background-image: url(../Images/Baby_shower/baby1.jpg);
+  grid-area: shower;
 }
 
 #d4 {
-    background-image: url(../Images/Wedding/wed4.jpg);
-    grid-area: wedding;
+  background-image: url(../Images/Wedding/wed4.jpg);
+  grid-area: wedding;
 }
 
 #d5 {
-    background-image: url(../Images/Pool/pool1.jpg);
-    grid-area: pool;
+  background-image: url(../Images/Pool/pool1.jpg);
+  grid-area: pool;
 }
 
 #d6 {
-    background-image: url(../Images/BonFire/bon2.jpg);
-    grid-area: bonfire;
+  background-image: url(../Images/BonFire/bon2.jpg);
+  grid-area: bonfire;
 }
 
 #back {
-    background: rgba(0, 0, 0, 0.6);
+  background: rgba(0, 0, 0, 0.6);
 }
 
 #image_title {
-    display: flex;
-    justify-content: space-around;
-    font-size: 50px;
-    color: white;
-    margin-top: 2.5em;
+  display: flex;
+  justify-content: space-around;
+  font-size: 50px;
+  color: white;
+  margin-top: 2.5em;
 }
 
 .image_dim {
-    width: 300px;
-    height: 300px;
-    background-repeat: no-repeat;
-    background-size: cover;
+  width: 300px;
+  height: 300px;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 #birthGallery,
@@ -61,22 +61,22 @@
 #weddingGallery,
 #poolGallery,
 #bonfireGallery {
-    display: none;
+  display: none;
 }
 
-#birthGallery>#close,
-#cocktailGallery>#close,
-#showerGallery>#close,
-#weddingGallery>#close,
-#poolGallery>#close,
-#bonfireGallery>#close {
-    display: grid;
-    justify-content: right;
+#birthGallery > #close,
+#cocktailGallery > #close,
+#showerGallery > #close,
+#weddingGallery > #close,
+#poolGallery > #close,
+#bonfireGallery > #close {
+  display: grid;
+  justify-content: right;
 }
 
 .close_style {
-    margin-top: 1em;
-    margin-right: 1em;
+  margin-top: 1em;
+  margin-right: 1em;
 }
 
 #birthGallery:target,
@@ -85,180 +85,180 @@
 #weddingGallery:target,
 #poolGallery:target,
 #bonfireGallery:target {
-    display: grid;
-    background: rgba(0, 0, 0, 0.6);
-    position: relative;
-    width: 100%;
-    height: auto;
-    margin-top: -58em;
+  display: grid;
+  background: rgba(0, 0, 0, 0.6);
+  position: relative;
+  width: 100%;
+  height: auto;
+  margin-top: -58em;
 }
 
 #mainGallery {
-    display: grid;
-    justify-content: center;
-    grid-gap: 25px;
-    grid-template-areas: "mainGallery1" "mainGallery2" "mainGallery3" "mainGallery4" "mainGallery5";
+  display: grid;
+  justify-content: center;
+  grid-gap: 25px;
+  grid-template-areas: "mainGallery1" "mainGallery2" "mainGallery3" "mainGallery4" "mainGallery5";
 }
 
 .imageGallery_dim {
-    width: 500px;
-    height: 400px;
-    background-repeat: no-repeat;
-    background-size: cover;
+  width: 500px;
+  height: 400px;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 #image1 {
-    background-image: url(../Images/Birthday/pic4.jpg);
-    grid-area: mainGallery1;
+  background-image: url(../Images/Birthday/pic4.jpg);
+  grid-area: mainGallery1;
 }
 
 #image2 {
-    background-image: url(../Images/Birthday/pic6.jpg);
-    grid-area: mainGallery2;
+  background-image: url(../Images/Birthday/pic6.jpg);
+  grid-area: mainGallery2;
 }
 
 #image3 {
-    background-image: url(../Images/Birthday/pic7.jpg);
-    grid-area: mainGallery3;
+  background-image: url(../Images/Birthday/pic7.jpg);
+  grid-area: mainGallery3;
 }
 
 #image4 {
-    background-image: url(../Images/Birthday/pic8.jpg);
-    grid-area: mainGallery4;
+  background-image: url(../Images/Birthday/pic8.jpg);
+  grid-area: mainGallery4;
 }
 
 #image5 {
-    background-image: url(../Images/Birthday/party-balloons.jpg);
-    grid-area: mainGallery5;
+  background-image: url(../Images/Birthday/party-balloons.jpg);
+  grid-area: mainGallery5;
 }
 
 #cocktailImage1 {
-    background-image: url(../Images/Cocktail/cocktail1.jpg);
-    grid-area: mainGallery1;
+  background-image: url(../Images/Cocktail/cocktail1.jpg);
+  grid-area: mainGallery1;
 }
 
 #cocktailImage2 {
-    background-image: url(../Images/Cocktail/cocktail2.jpg);
-    grid-area: mainGallery2;
+  background-image: url(../Images/Cocktail/cocktail2.jpg);
+  grid-area: mainGallery2;
 }
 
 #cocktailImage3 {
-    background-image: url(../Images/Cocktail/cocktail3.jpg);
-    grid-area: mainGallery3;
+  background-image: url(../Images/Cocktail/cocktail3.jpg);
+  grid-area: mainGallery3;
 }
 
 #cocktailImage4 {
-    background-image: url(../Images/Cocktail/cocktail4.jpg);
-    grid-area: mainGallery4;
+  background-image: url(../Images/Cocktail/cocktail4.jpg);
+  grid-area: mainGallery4;
 }
 
 #cocktailImage5 {
-    background-image: url(../Images/Cocktail/cocktail5.jpg);
-    grid-area: mainGallery5;
+  background-image: url(../Images/Cocktail/cocktail5.jpg);
+  grid-area: mainGallery5;
 }
 
 #showerImage1 {
-    background-image: url(../Images/Baby_shower/baby1.jpg);
-    grid-area: mainGallery1;
+  background-image: url(../Images/Baby_shower/baby1.jpg);
+  grid-area: mainGallery1;
 }
 
 #showerImage2 {
-    background-image: url(../Images/Baby_shower/baby2.jpg);
-    grid-area: mainGallery2;
+  background-image: url(../Images/Baby_shower/baby2.jpg);
+  grid-area: mainGallery2;
 }
 
 #showerImage3 {
-    background-image: url(../Images/Baby_shower/royal-shower.jpg);
-    grid-area: mainGallery3;
+  background-image: url(../Images/Baby_shower/royal-shower.jpg);
+  grid-area: mainGallery3;
 }
 
 #showerImage4 {
-    background-image: url(../Images/Baby_shower/baby4.jpg);
-    grid-area: mainGallery4;
+  background-image: url(../Images/Baby_shower/baby4.jpg);
+  grid-area: mainGallery4;
 }
 
 #showerImage5 {
-    background-image: url(../Images/Baby_shower/baby6.jpg);
-    grid-area: mainGallery5;
+  background-image: url(../Images/Baby_shower/baby6.jpg);
+  grid-area: mainGallery5;
 }
 
 #weddingImage1 {
-    background-image: url(../Images/Wedding/wed1.jpg);
-    grid-area: mainGallery1;
+  background-image: url(../Images/Wedding/wed1.jpg);
+  grid-area: mainGallery1;
 }
 
 #weddingImage2 {
-    background-image: url(../Images/Wedding/wed2.jpg);
-    grid-area: mainGallery2;
+  background-image: url(../Images/Wedding/wed2.jpg);
+  grid-area: mainGallery2;
 }
 
 #weddingImage3 {
-    background-image: url(../Images/Wedding/wed3.jpg);
-    grid-area: mainGallery3;
+  background-image: url(../Images/Wedding/wed3.jpg);
+  grid-area: mainGallery3;
 }
 
 #weddingImage4 {
-    background-image: url(../Images/Wedding/wed4.jpg);
-    grid-area: mainGallery4;
+  background-image: url(../Images/Wedding/wed4.jpg);
+  grid-area: mainGallery4;
 }
 
 #weddingImage5 {
-    background-image: url(../Images/Wedding/wed5.jpg);
-    grid-area: mainGallery5;
+  background-image: url(../Images/Wedding/wed5.jpg);
+  grid-area: mainGallery5;
 }
 
 #poolImage1 {
-    background-image: url(../Images/Pool/pool1.jpg);
-    grid-area: mainGallery1;
+  background-image: url(../Images/Pool/pool1.jpg);
+  grid-area: mainGallery1;
 }
 
 #poolImage2 {
-    background-image: url(../Images/Pool/pool2.jpg);
-    grid-area: mainGallery2;
+  background-image: url(../Images/Pool/pool2.jpg);
+  grid-area: mainGallery2;
 }
 
 #poolImage3 {
-    background-image: url(../Images/Pool/pool3.jpg);
-    grid-area: mainGallery3;
+  background-image: url(../Images/Pool/pool3.jpg);
+  grid-area: mainGallery3;
 }
 
 #poolImage4 {
-    background-image: url(../Images/Pool/pool4.jpg);
-    grid-area: mainGallery4;
+  background-image: url(../Images/Pool/pool4.jpg);
+  grid-area: mainGallery4;
 }
 
 #poolImage5 {
-    background-image: url(../Images/Pool/pool5.jpg);
-    grid-area: mainGallery5;
+  background-image: url(../Images/Pool/pool5.jpg);
+  grid-area: mainGallery5;
 }
 
 #bonfireImage1 {
-    background-image: url(../Images/bonFire/bon1.jpg);
-    grid-area: mainGallery1;
+  background-image: url(../Images/bonFire/bon1.jpg);
+  grid-area: mainGallery1;
 }
 
 #bonfireImage2 {
-    background-image: url(../Images/bonFire/bon2.jpg);
-    grid-area: mainGallery2;
+  background-image: url(../Images/bonFire/bon2.jpg);
+  grid-area: mainGallery2;
 }
 
 #bonfireImage3 {
-    background-image: url(../images/bonFire/bon3.jpg);
-    grid-area: mainGallery3;
+  background-image: url(../images/bonFire/bon3.jpg);
+  grid-area: mainGallery3;
 }
 
 #bonfireImage4 {
-    background-image: url(../Images/BonFire/bon4.jpg);
-    grid-area: mainGallery4;
+  background-image: url(../Images/BonFire/bon4.jpg);
+  grid-area: mainGallery4;
 }
 
 #bonfireImage5 {
-    background-image: url(..images/bonFire/bon5.jpg);
-    grid-area: mainGallery5;
+  background-image: url(..images/bonFire/bon5.jpg);
+  grid-area: mainGallery5;
 }
 
 @media only screen and (max-width: 768px) {
-    #wrapper {
-        grid-template-areas: "birthday" "cocktail" "shower" "wedding" "pool" "bonfire";
-    }
+  #wrapper {
+    grid-template-areas: "birthday" "cocktail" "shower" "wedding" "pool" "bonfire";
+  }
 }
