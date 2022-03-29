@@ -56,3 +56,9 @@
 #g6 {
   grid-area: text3;
 }
+@media only screen and (max-width: 768px) {
+  nav{
+    display: flex;
+    flex-direction: column;
+  }
+}
